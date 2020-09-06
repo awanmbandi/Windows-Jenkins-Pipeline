@@ -23,7 +23,6 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                chmod 777 /var/jenkins_home/workspace/Windows-Jenkins-Pipeline@tmp/durable-3411de23/script.sh'
                 chmod 777 './jenkins/scripts/deliver.sh'
                 sh './jenkins/scripts/deliver.sh'
             }
